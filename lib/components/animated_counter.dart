@@ -4,10 +4,10 @@ import '../constants.dart';
 
 class AnimatedCounter extends StatelessWidget {
   const AnimatedCounter({
-    Key? key,
+    super.key,
     required this.value,
     this.text,
-  }) : super(key: key);
+  });
 
   final int value;
   final String? text;
@@ -21,7 +21,7 @@ class AnimatedCounter extends StatelessWidget {
         "$value$text",
         style: Theme.of(context)
             .textTheme
-            .headline6!
+            .titleLarge!
             .copyWith(color: primaryColor),
       ),
     );

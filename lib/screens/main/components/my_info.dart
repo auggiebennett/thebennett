@@ -2,28 +2,28 @@ import 'package:flutter/material.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 1.23,
       child: Container(
-        color: Color(0xFF242430),
+        color: const Color(0xFF242430),
         child: Column(
           children: [
-            Spacer(flex: 2),
-            CircleAvatar(
+            const Spacer(flex: 2),
+            const CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage("assets/images/IMG_7344.jpg"),
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               "Abu Anwar",
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
-            Text(
+            const Text(
               "Flutter Developer & Founder of \n The Flutter Way",
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -31,7 +31,7 @@ class MyInfo extends StatelessWidget {
                 height: 1.5,
               ),
             ),
-            Spacer(flex: 2),
+            const Spacer(flex: 2),
           ],
         ),
       ),

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/models/Recommendation.dart';
+import 'package:the_bennett/models/recommendation.dart';
 
 import '../../../constants.dart';
 
 class RecommendationCard extends StatelessWidget {
   const RecommendationCard({
-    Key? key,
+    super.key,
     required this.recommendation,
-  }) : super(key: key);
+  });
 
   final Recommendation recommendation;
 
@@ -15,14 +15,14 @@ class RecommendationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 400,
-      padding: EdgeInsets.all(defaultPadding),
+      padding: const EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             recommendation.name!,
-            style: Theme.of(context).textTheme.subtitle2,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
           Text(recommendation.source!),
           const SizedBox(height: defaultPadding),
@@ -30,7 +30,7 @@ class RecommendationCard extends StatelessWidget {
             recommendation.text!,
             maxLines: 4,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(height: 1.5),
+            style: const TextStyle(height: 1.5),
           )
         ],
       ),

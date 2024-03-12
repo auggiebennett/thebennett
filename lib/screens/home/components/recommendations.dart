@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/models/Recommendation.dart';
+import 'package:the_bennett/models/recommendation.dart';
 import 'package:the_bennett/screens/home/components/recommendation_card.dart';
 
 import '../../../constants.dart';
 
 class Recommendations extends StatelessWidget {
   const Recommendations({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Recommendations extends StatelessWidget {
         children: [
           Text(
             "Recommendations",
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: defaultPadding),
           SingleChildScrollView(
@@ -40,4 +40,3 @@ class Recommendations extends StatelessWidget {
     );
   }
 }
-

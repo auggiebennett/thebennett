@@ -5,27 +5,26 @@ import '../../../constants.dart';
 
 class Knowledges extends StatelessWidget {
   const Knowledges({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Divider(),
+        const Divider(),
         Padding(
-          padding: const EdgeInsets.symmetric(
-              vertical: defaultPadding),
+          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
             "Knowledges",
-            style: Theme.of(context).textTheme.subtitle2,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
-        KnowledgeText(text: "Flutter, Dart"),
-        KnowledgeText(text: "Stylus, Sass, Less"),
-        KnowledgeText(text: "Gulp, Webpack, Grunt"),
-        KnowledgeText(text: "GIT Knowledge"),
+        const KnowledgeText(text: "Flutter, Dart"),
+        const KnowledgeText(text: "Stylus, Sass, Less"),
+        const KnowledgeText(text: "Gulp, Webpack, Grunt"),
+        const KnowledgeText(text: "GIT Knowledge"),
       ],
     );
   }
@@ -33,9 +32,9 @@ class Knowledges extends StatelessWidget {
 
 class KnowledgeText extends StatelessWidget {
   const KnowledgeText({
-    Key? key,
+    super.key,
     required this.text,
-  }) : super(key: key);
+  });
 
   final String text;
 
@@ -46,7 +45,7 @@ class KnowledgeText extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset("assets/icons/check.svg"),
-          SizedBox(width: defaultPadding / 2),
+          const SizedBox(width: defaultPadding / 2),
           Text(text),
         ],
       ),

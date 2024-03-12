@@ -4,10 +4,10 @@ import '../../../constants.dart';
 
 class HeighLight extends StatelessWidget {
   const HeighLight({
-    Key? key,
+    super.key,
     required this.counter,
     this.label,
-  }) : super(key: key);
+  });
 
   final Widget counter;
   final String? label;
@@ -17,8 +17,8 @@ class HeighLight extends StatelessWidget {
     return Row(
       children: [
         counter,
-        SizedBox(width: defaultPadding / 2),
-        Text(label!, style: Theme.of(context).textTheme.subtitle2),
+        const SizedBox(width: defaultPadding / 2),
+        Text(label!, style: Theme.of(context).textTheme.titleSmall),
       ],
     );
   }

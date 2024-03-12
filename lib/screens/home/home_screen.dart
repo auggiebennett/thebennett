@@ -7,11 +7,11 @@ import 'components/my_projects.dart';
 import 'components/recommendations.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MainScreen(
+    return const MainScreen(
       children: [
         HomeBanner(),
         HighLightsInfo(),

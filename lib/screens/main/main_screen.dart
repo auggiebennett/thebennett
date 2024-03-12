@@ -5,7 +5,7 @@ import 'package:the_bennett/responsive.dart';
 import 'components/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key, required this.children}) : super(key: key);
+  const MainScreen({super.key, required this.children});
 
   final List<Widget> children;
 
@@ -22,23 +22,23 @@ class MainScreen extends StatelessWidget {
                   onPressed: () {
                     Scaffold.of(context).openDrawer();
                   },
-                  icon: Icon(Icons.menu),
+                  icon: const Icon(Icons.menu),
                 ),
               ),
             ),
-      drawer: SideMenu(),
+      drawer: const SideMenu(),
       body: Center(
         child: Container(
-          constraints: BoxConstraints(maxWidth: maxWidth),
+          constraints: const BoxConstraints(maxWidth: maxWidth),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               if (Responsive.isDesktop(context))
-                Expanded(
+                const Expanded(
                   flex: 2,
                   child: SideMenu(),
                 ),
-              SizedBox(width: defaultPadding),
+              const SizedBox(width: defaultPadding),
               Expanded(
                 flex: 7,
                 child: SingleChildScrollView(

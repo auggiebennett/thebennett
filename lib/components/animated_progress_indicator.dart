@@ -4,10 +4,10 @@ import '../constants.dart';
 
 class AnimatedCircularProgressIndicator extends StatelessWidget {
   const AnimatedCircularProgressIndicator({
-    Key? key,
+    super.key,
     required this.percentage,
     required this.label,
-  }) : super(key: key);
+  });
 
   final double percentage;
   final String label;
@@ -31,20 +31,20 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
                 ),
                 Center(
                   child: Text(
-                    (value * 100).toInt().toString() + "%",
-                    style: Theme.of(context).textTheme.subtitle1,
+                    "${(value * 100).toInt()}%",
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
               ],
             ),
           ),
         ),
-        SizedBox(height: defaultPadding / 2),
+        const SizedBox(height: defaultPadding / 2),
         Text(
           label,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: Theme.of(context).textTheme.subtitle2,
+          style: Theme.of(context).textTheme.titleSmall,
         ),
       ],
     );
@@ -53,10 +53,10 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
 
 class AnimatedLinearProgressIndicator extends StatelessWidget {
   const AnimatedLinearProgressIndicator({
-    Key? key,
+    super.key,
     required this.percentage,
     required this.label,
-  }) : super(key: key);
+  });
 
   final double percentage;
   final String label;
@@ -75,12 +75,12 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
               children: [
                 Text(
                   label,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
-                Text((value * 100).toInt().toString() + "%"),
+                Text("${(value * 100).toInt()}%"),
               ],
             ),
-            SizedBox(height: defaultPadding / 2),
+            const SizedBox(height: defaultPadding / 2),
             LinearProgressIndicator(
               value: value,
               color: primaryColor,

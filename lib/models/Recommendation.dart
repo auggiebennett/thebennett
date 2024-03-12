@@ -1,9 +1,11 @@
+// ignore: file_names
 class Recommendation {
   final String? name, source, text;
 
   Recommendation({this.name, this.source, this.text});
 }
 
+// ignore: non_constant_identifier_names
 final List<Recommendation> demo_recommendations = [
   Recommendation(
     name: "Kolapo Obanewa",
