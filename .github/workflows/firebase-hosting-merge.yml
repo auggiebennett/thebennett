@@ -7,10 +7,20 @@ name: Deploy to Firebase Hosting on merge
     branches:
       - master
 jobs:
+steps:
+- uses: actions/checkout@v4
+- uses: subosito/flutter-action@v2
+  
+
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter test
       - run: flutter build web
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
