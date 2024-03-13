@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: non_constant_identifier_names
 
 class Recommendation {
   final String? name, source, text;
@@ -6,8 +6,7 @@ class Recommendation {
   Recommendation({this.name, this.source, this.text});
 }
 
-// ignore: non_constant_identifier_names
-final List<Recommendation> demo_recommendations = [
+final List<Recommendation> demo_recommendations = <Recommendation>[
   Recommendation(
     name: "Kolapo Obanewa",
     source: "Linkedin",
