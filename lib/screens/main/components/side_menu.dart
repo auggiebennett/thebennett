@@ -1,9 +1,6 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../../constants.dart';
@@ -50,7 +47,7 @@ class SideMenu extends StatelessWidget {
                     const Divider(),
                     const SizedBox(height: defaultPadding / 2),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => launchUrlString(''),
                       child: FittedBox(
                         child: Row(
                           children: [
