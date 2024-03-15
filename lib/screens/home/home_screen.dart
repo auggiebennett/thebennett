@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/screens/main/main_screen.dart';
+
+import '../main/main_screen.dart';
 
 import 'components/heighlights.dart';
 import 'components/home_banner.dart';

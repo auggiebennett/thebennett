@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/components/animated_counter.dart';
-import 'package:the_bennett/responsive.dart';
 
+import '../../../components/animated_counter.dart';
 import '../../../constants.dart';
+import '../../../responsive.dart';
+
 import 'heigh_light.dart';
 
 class HighLightsInfo extends StatelessWidget {

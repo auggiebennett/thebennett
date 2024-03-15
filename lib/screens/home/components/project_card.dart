@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/models/project.dart';
-import 'package:the_bennett/responsive.dart';
 
 import '../../../constants.dart';
+import '../../../models/project.dart';
+import '../../../responsive.dart';
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({

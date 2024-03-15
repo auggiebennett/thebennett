@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/constants.dart';
-import 'package:the_bennett/responsive.dart';
+
+import '../../constants.dart';
+import '../../responsive.dart';
 
 import 'components/side_menu.dart';
 

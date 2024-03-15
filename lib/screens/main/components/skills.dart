@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_bennett/components/animated_progress_indicator.dart';
 
+import '../../../components/animated_progress_indicator.dart';
 import '../../../constants.dart';
 
 class Skills extends StatelessWidget {
