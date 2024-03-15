@@ -1,6 +1,10 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:the_bennett/constants.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import 'area_info_text.dart';
 import 'coding.dart';
@@ -26,16 +30,16 @@ class SideMenu extends StatelessWidget {
                 child: Column(
                   children: [
                     const AreaInfoText(
-                      title: "Residence",
-                      text: "Bangladesg",
+                      title: "Country",
+                      text: "United States",
                     ),
                     const AreaInfoText(
                       title: "City",
-                      text: "Dhaka",
+                      text: "Peoria",
                     ),
                     const AreaInfoText(
                       title: "Age",
-                      text: "22",
+                      text: "21",
                     ),
                     const Skills(),
                     const SizedBox(height: defaultPadding),
@@ -70,15 +74,18 @@ class SideMenu extends StatelessWidget {
                         children: [
                           const Spacer(),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () => launchUrlString(
+                                'https://www.linkedin.com/in/austin-bennett-8275452a8/'),
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () => launchUrlString(
+                                'https://github.com/auggiebennett'),
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () => launchUrlString(
+                                'https://twitter.com/AuggieBennett'),
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
                           const Spacer(),

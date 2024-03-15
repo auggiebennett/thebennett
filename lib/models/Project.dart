@@ -1,12 +1,9 @@
-// ignore_for_file: non_constant_identifier_names
-
 class Project {
   final String? title, description;
-
   Project({this.title, this.description});
 }
 
-List<Project> demo_projects = [
+List<Project> demoProjects = [
   Project(
     title: "Watermellon",
     description:

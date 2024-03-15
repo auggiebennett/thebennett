@@ -133,7 +133,7 @@ class FlutterCodedText extends StatelessWidget {
         text: "<",
         children: [
           TextSpan(
-            text: "flutter",
+            text: "flutter/react/native",
             style: TextStyle(color: primaryColor),
           ),
           TextSpan(text: ">"),
