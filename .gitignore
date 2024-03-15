@@ -1,6 +1,5 @@
 # Flutter specific
 .pub
-build
 flutter_localizations.yaml
 
 # Firebase specific
