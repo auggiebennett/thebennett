@@ -17,7 +17,6 @@ launch.json
 
 # Flutter web specific
 # Ignore output from building the web project
-web/*
 
 # Env variables
 # Ignore any environment variable files
