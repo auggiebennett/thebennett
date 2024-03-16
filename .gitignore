@@ -1,31 +1,28 @@
-# Flutter specific
-.pub
-flutter_localizations.yaml
-
-# Firebase specific
-firebase_service_account.json  # <-- Important:  DO NOT COMMIT
-
-# General ignore files
-*.iml
-*.log
-*.ttf
-*.otf
-*.eot
-*.woff
-*.woff2
-*~
-# Ignore node_modules if present
-node_modules/
-
-# Additional files you might want to ignore
-# (based on your project structure)
-android/app/build.gradle
-ios/Runner.xcworkspace
-.env  # If you have a local environment file
-
-# Cache and temporary files
+# Flutter
+# Ignore any generated files 
+build/
+.flutter-flow/
 .dart_tool/
-**/.dart_tool/
-.packages
-coverage/
-test_results/
+
+# Firebase
+# Ignore sensitive files
+.firebaserc
+.firebase/
+
+# VS Code
+# Ignore VS Code specific files and folders
+.vscode/
+# Ignore launch configurations (optional, you might want to keep them)
+launch.json
+
+# Flutter web specific
+# Ignore output from building the web project
+web/*
+
+# Env variables
+# Ignore any environment variable files
+.env*
+
+# Additional Flutter ignore (optional)
+# Ignore pubspec.lock file 
+pubspec.lock
