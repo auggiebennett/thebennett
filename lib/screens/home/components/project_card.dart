@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../../constants.dart';
 import '../../../models/project.dart';
@@ -29,13 +30,13 @@ class ProjectCard extends StatelessWidget {
           const Spacer(),
           Text(
             project.description!,
-            maxLines: Responsive.isMobileLarge(context) ? 3 : 4,
+            maxLines: Responsive.isMobileLarge(context) ? 2 : 8,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(height: 1.5),
           ),
           const Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () => launchUrlString(project.link.toString()),
             child: const Text(
               "Read More >>",
               style: TextStyle(color: primaryColor),
