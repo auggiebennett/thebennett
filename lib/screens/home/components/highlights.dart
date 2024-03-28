@@ -4,7 +4,7 @@ import '../../../components/animated_counter.dart';
 import '../../../constants.dart';
 import '../../../responsive.dart';
 
-import 'heigh_light.dart';
+import 'high_lights.dart';
 
 class HighLightsInfo extends StatelessWidget {
   const HighLightsInfo({
